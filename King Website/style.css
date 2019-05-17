@@ -8,6 +8,10 @@
 	}
 	a {
 		color: rgb(146, 211, 202);
+		pointer-events: none;
+	}
+	p {
+		pointer-events: none;
 	}
 	.title {
 		position: fixed;
