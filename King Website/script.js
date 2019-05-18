@@ -106,3 +106,7 @@ descs[1].style.opacity = 0; // Products
 
 // Fade page
 fade = window.setInterval(function() {animate("body", true)}, 100);
+
+// Version
+var d = new Date();
+document.getElementById("version").innerHTML = "<strong>Version 1.2.2019518.175601.LM</strong><br>© " + d.getFullYear() + " KingKingGreat";
