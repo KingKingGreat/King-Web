@@ -8,6 +8,7 @@
 	}
 	a {
 		color: rgb(146, 211, 202);
+		pointer-events: none;
 	}
 	.title {
 		position: fixed;
@@ -35,6 +36,7 @@
 		padding: 20px;
 	}
 	.desc {
+		pointer-events: none;
 		background-color: rgba(0, 0, 200, 20);
 		color: rgb(255, 255, 255);
 		margin-left: 60px;
