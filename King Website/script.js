@@ -41,16 +41,30 @@ var fade;
 titles[0].addEventListener("click", function() {
 	if (descs[0].style.opacity < 1) {
 		fade = window.setInterval(function() {animate("descAbout", true)}, 50);
+		descs[0].style["pointer-events"] = "auto";
 	} else {
 		fade = window.setInterval(function() {animate("descAbout", false)}, 50);
+		descs[0].style["pointer-events"] = "none";
 	}
 }); // About
 
 titles[1].addEventListener("click", function() {
 	if (descs[1].style.opacity < 1) {
 		fade = window.setInterval(function() {animate("descProducts", true)}, 50);
+		descs[1].style['pointer-events'] = "auto";
+		var link = document.querySelectorAll(".links");
+
+		for (var i = 0; i < link.length; i ++) {
+			link[i].style["pointer-events"] = "auto";
+		}
 	} else {
 		fade = window.setInterval(function() {animate("descProducts", false)}, 50);
+		descs[1].style['pointer-events'] = "none";
+		var link = document.querySelectorAll(".links");
+
+		for (var i = 0; i < link.length; i ++) {
+			link[i].style["pointer-events"] = "none";
+		}
 	}
 }); // Products
 
@@ -58,16 +72,30 @@ titles[1].addEventListener("click", function() {
 titles[0].addEventListener("touchstart", function(ev) {
 	if (descs[0].style.opacity < 1) {
 		fade = window.setInterval(function() {animate("descAbout", true)}, 50);
+		descs[0].style["pointer-events"] = "auto";
 	} else {
 		fade = window.setInterval(function() {animate("descAbout", false)}, 50);
+		descs[0].style["pointer-events"] = "none";
 	}
 }); // About
 
 titles[1].addEventListener("touchstart", function() {
 	if (descs[1].style.opacity < 1) {
 		fade = window.setInterval(function() {animate("descProducts", true)}, 50);
+		descs[1].style['pointer-events'] = "auto";
+		var link = document.querySelectorAll(".links");
+
+		for (var i = 0; i < link.length; i ++) {
+			link[i].style["pointer-events"] = "auto";
+		}
 	} else {
 		fade = window.setInterval(function() {animate("descProducts", false)}, 50);
+		descs[1].style['pointer-events'] = "none";
+		var link = document.querySelectorAll(".links");
+
+		for (var i = 0; i < link.length; i ++) {
+			link[i].style["pointer-events"] = "none";
+		}
 	}
 }); // Products
 
